@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portofolio Bernadus Mardin Samson</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --accent:#b91c1c; --muted:#6b7280; --wa:#16a34a; }
+  *{box-sizing:border-box;scroll-behavior:smooth;}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:#fffaf9;color:#0f172a;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1000px;margin:0 auto;padding:20px;}
+  header{background:linear-gradient(90deg,var(--accent),#dc2626);color:white;padding:28px;border-radius:12px;text-align:center;margin:20px 0;}
+  .profile-pic{width:120px;height:120px;border-radius:9999px;border:4px solid rgba(255,255,255,0.9);object-fit:cover;display:block;margin:0 auto 12px;}
+  h1{margin:0;font-size:28px;font-weight:800}
+  section{background:white;padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,0.06);margin-bottom:16px;}
+  h2{margin:0 0 10px 0;color:var(--accent);}
+  p.desc{color:var(--muted);line-height:1.6}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+  .btn-cv{background:#ef4444;color:white}
+  .btn-wa{background:var(--wa);color:white;margin-top:12px}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr);}}
+  .card{overflow:hidden;border-radius:8px;border:1px solid #eee;background:#fff;transition:transform .28s ease,box-shadow .28s ease;cursor:default}
+  .card img{width:100%;height:180px;object-fit:cover;display:block}
+  .card-body{padding:12px}
+  .card h3{margin:0 0 6px 0;color:var(--accent);font-size:16px;display:flex;align-items:center;gap:6px;}
+  .small{font-size:13px;color:var(--muted)}
+  .center{text-align:center}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+  .from-left{transform:translateX(-40px);}
+  .from-right{transform:translateX(40px);}
+  .from-top{transform:translateY(-40px);}
+  .from-bottom{transform:translateY(40px);}
+  .from-left.visible,.from-right.visible,.from-top.visible,.from-bottom.visible{transform:translate(0,0);}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header id="profile" class="reveal from-top">
+      <img src="IMG_20250324_174733_543.webp" alt="Foto Profil" class="profile-pic">
+      <h1>Bernadus Mardin Samson</h1>
+    </header>
+
+    <section id="about" class="reveal from-left">
+      <h2>Tentang Saya</h2>
+      <p class="desc">Saya Bernadus Mardin Samson, seorang koki/kitchen staff/chef dengan pengalaman di dunia kuliner. Berfokus pada hidangan Nusantara yang autentik dan inovatif untuk memberikan pengalaman rasa terbaik.</p>
+      <p class="center"><a class="btn btn-cv" href="CV_Bernadus_Mardin.pdf" download="CV_Bernadus_Mardin.pdf">📄 Lihat CV Lengkap</a></p>
+    </section>
+
+    <section id="portfolio" class="reveal from-right">
+      <h2>Portfolio Kuliner</h2>
+      <div class="grid">
+        <article class="card reveal from-left">
+          <img src="IMG_20250727_201237_896.jpg" alt="Nasi Ayam">
+          <div class="card-body">
+            <h3>🍗 Hidangan Spesial: Nasi Ayam</h3>
+            <p class="small">Nasi putih dengan ayam goreng, tempe, lalapan, dan sambal khas.</p>
+          </div>
+        </article>
+        <article class="card reveal from-bottom">
+          <img src="IMG_20250727_230218_800.jpg" alt="Mie Goreng">
+          <div class="card-body">
+            <h3>🍜 Hidangan Favorit: Mie Goreng Spesial</h3>
+            <p class="small">Mie goreng dengan taburan bawang goreng, irisan daun bawang, kerupuk gurih, disajikan di piring hitam elegan.</p>
+          </div>
+        </article>
+        <article class="card reveal from-right">
+          <img src="IMG_20240616_224942_799.jpg" alt="Ayam Goreng Lalapan">
+          <div class="card-body">
+            <h3>🥗 Hidangan Tradisional: Ayam Goreng Lalapan</h3>
+            <p class="small">Nasi putih hangat dengan ayam goreng crispy berbumbu, tempe & tahu goreng, irisan timun segar, serta sambal pedas dan kecap manis.</p>
+          </div>
+        </article>
+        <article class="card reveal from-top">
+          <img src="IMG_20231110_215648_605.jpg" alt="Nasi Rendang & Perkedel">
+          <div class="card-body">
+            <h3>🍛 Hidangan Tradisional: Nasi Rendang & Perkedel</h3>
+            <p class="small">Nasi putih hangat ditaburi bawang goreng, rendang daging sapi berbumbu rempah khas, perkedel kentang goreng renyah, serta kerupuk gurih sebagai pelengkap.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal from-bottom center">
+      <a class="btn btn-wa" href="https://wa.me/+6283814345533" target="_blank" rel="noopener noreferrer">💬 Hubungi via WhatsApp</a>
+    </section>
+
+    <footer>© 2025 Bernadus Mardin Samson. All rights reserved.</footer>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+      else entry.target.classList.remove('visible');
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(r => io.observe(r));
+});
+</script>
+</body>
+</html>
